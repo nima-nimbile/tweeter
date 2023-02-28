@@ -1,0 +1,35 @@
+nav {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  /* border: 14px solid #4169E1; */
+  background-color: #4169E1;
+}
+#tw {
+  color: #FFFFFF;
+  font-family: Bungee;
+  padding: 1.5em;
+  font-size: 24px;
+  margin-top: 20;
+  float: left;
+  
+}
+#Write {
+  color: #FFFFFF;
+}
+
+#newTw{
+  color: #bfbfbf;
+  font-size: 18px;
+  float: right;
+  padding: 1.5em;
+  margin: auto;
+
+}
+#arrow {
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+

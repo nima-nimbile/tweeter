@@ -1,0 +1,25 @@
+.parent {
+  height: 400px;
+  width: 100%;
+  background-color: #338c00;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+/* .header {
+  display: flex;
+  justify-content: center;
+} */
+.child1 {
+padding-top: 4em;
+height: 250px;
+display: flex;
+justify-content: center;
+
+}
+
+.child2 {
+color: #ffff;
+font-size: 18px;
+display: flex;
+justify-content: center;
+}
