@@ -3,8 +3,8 @@ nav {
   top: 0;
   height: 80px;
   width: 100%;
-  /* border: 14px solid #4169E1; */
   background-color: #4169E1;
+  animation: bounce 1.5s ease infinite alternate-reverse;
 }
 #tw {
   color: #FFFFFF;

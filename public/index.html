@@ -3,7 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Kolker+Brush&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -48,9 +49,18 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <p>Hello World</p>
-      <h1>Nima in here</h1>
-      <h2>is that true</h2>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form action="/tweets" method="post">
+          <label class="text" for="tweet-text">What are you humming about?</label>
+          <!-- <br> -->
+          <textarea placeholder="Comment text."  name="text" id="tweet-text"></textarea>
+          <div id="div">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>

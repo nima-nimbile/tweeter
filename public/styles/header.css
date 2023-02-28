@@ -2,7 +2,7 @@
   height: 400px;
   width: 100%;
   background-color: #338c00;
-background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 /* .header {

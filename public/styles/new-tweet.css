@@ -1,0 +1,33 @@
+
+#tweet-text {
+  display: inline-block;
+  width: 90%;
+  border-style: none;
+  border-bottom-style: groove;
+}
+
+button {
+  background-color: #4156a1;
+  color: #ffff;
+  font-family: bungee;
+  font-size: smaller;
+  border: 0;
+  float: left;
+  margin-left: 5%;
+}
+.counter {
+  float: right;
+  margin-right: 5%;
+  font-family: 'Bungee'
+}
+
+.text{
+  float: left;
+  margin-left: 5%;
+}
+.borderbottom {
+  border-bottom: solid;
+  display: inline-flex;
+  width: 90%;
+}
+
