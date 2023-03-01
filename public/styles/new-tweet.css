@@ -4,17 +4,29 @@
   width: 90%;
   border-style: none;
   border-bottom-style: groove;
+  background-color: #163800;
+background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
+color: #c7d8bc;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 button {
-  background-color: #4156a1;
-  color: #ffff;
+  background-color: #163800;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  color: #183153;
   font-family: bungee;
   font-size: smaller;
   border: 0;
   float: left;
   margin-left: 5%;
 }
+button:hover {
+color: rgba(150, 175, 5, 0.651);
+}
+button:checked {
+  color: rgba(199, 45, 7, 0.651);
+  }
+
 .counter {
   float: right;
   margin-right: 5%;

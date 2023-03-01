@@ -3,15 +3,15 @@ nav {
   top: 0;
   height: 80px;
   width: 100%;
-  background-color: #4169E1;
+  background-color: #aa8c15;
   animation: bounce 1.5s ease infinite alternate-reverse;
 }
 #tw {
-  color: #FFFFFF;
+  color: #183153;
   font-family: Bungee;
   padding: 1.5em;
   font-size: 24px;
-  margin-top: 20;
+  margin: auto;
   float: left;
   
 }
@@ -20,7 +20,8 @@ nav {
 }
 
 #newTw{
-  color: #bfbfbf;
+  
+  color: #183153;
   font-size: 18px;
   float: right;
   padding: 1.5em;

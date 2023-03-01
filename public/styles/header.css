@@ -1,8 +1,9 @@
 .parent {
   height: 400px;
   width: 100%;
-  background-color: #338c00;
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  background-color: #163800;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 /* .header {
@@ -14,11 +15,12 @@ padding-top: 4em;
 height: 250px;
 display: flex;
 justify-content: center;
+color: #aa8c15;
 
 }
 
 .child2 {
-color: #ffff;
+color:  #e2d086;
 font-size: 18px;
 display: flex;
 justify-content: center;

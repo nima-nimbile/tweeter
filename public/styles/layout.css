@@ -16,8 +16,13 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #e2d086;
+  background-color: #163800;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 
@@ -26,7 +31,7 @@ body {
   width: 100%;
   display: inline-block;
   text-align: center;
-  background-color: #f4f1ec; 
+   
 }
 
 /*

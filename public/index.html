@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/article.tweet.css" type="text/css" />
     
     <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Kolker+Brush&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
@@ -32,7 +33,7 @@
     <!-- Top nav bar (fixed) -->
     
     <nav >
-      <span id = "tw">tweeter</span>
+      <span id = "tw"><i class="fa-sharp fa-solid fa-dove"></i>tweeter</span>
       <span id = "newTw"><span id ="Write">Write </span >a new tweeter<br><i id = "arrow" class="fa-solid fa-angles-down"></i></span>
       <!-- <i id = "arrow" class="fa-solid fa-angles-down"></i> -->
     </nav>
@@ -52,7 +53,7 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <!-- <h2>Compose Tweet</h2> -->
         <form action="/tweets" method="post">
           <label class="text" for="tweet-text">What are you humming about?</label>
           <!-- <br> -->
@@ -63,6 +64,22 @@
           </div>
         </form>
       </section>
+      <article class="article">
+        <header class="header-two">
+          <h4 class="a">Nima</h4>
+          <h4 class="b">my ID</h4>
+     </header>
+        <textarea name="text-second"  id ="text-second"></textarea>
+        <br>
+        <footer >
+          <h6 class="h6">10 days ago</h6>
+          <div class="icons">
+            <a class="first"><i  class="fa-sharp fa-solid fa-flag"></i></a>
+            <a class="second"><i  class="fa-sharp fa-solid fa-rotate"></i></a>
+            <a class="third"><i class="fa-sharp fa-regular fa-heart"></i></a>
+          </div>
+        </footer>
+      </article>
     </main>
   </body>
   
