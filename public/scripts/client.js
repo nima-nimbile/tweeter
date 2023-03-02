@@ -2,5 +2,114 @@
  * Client-side JS logic goes here
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
+ * 
  */
+
+// const { response } = require("express");
+
+// ..........................................................................................tweetData Object
+
+// const data = [
+//   {
+//     "user": {
+//       "name": "Newton",
+//       "avatars": "https://i.imgur.com/73hZDYK.png"
+//       ,
+//       "handle": "@SirIsaac"
+//     },
+//     "content": {
+//       "text": "If I have seen further it is by standing on the shoulders of giants"
+//     },
+//     "created_at": 1461116232227
+//   },
+//   {
+//     "user": {
+//       "name": "Descartes",
+//       "avatars": "https://i.imgur.com/nlhLi3I.png",
+//       "handle": "@rd" },
+//     "content": {
+//       "text": "Je pense , donc je suis"
+//     },
+//     "created_at": 1461113959088
+//   }
+// ]
+const tweetData = {
+  "user": {
+    "name": "Newton",
+    "avatars": "https://i.imgur.com/73hZDYK.png",
+      "handle": "@SirIsaac"
+    },
+  "content": {
+      "text": "If I have seen further it is by standing on the shoulders of giants"
+    },
+  "created_at": 1461116232227
+}
+// ..........................................................................................createTweetElement = (tweetData)
+const createTweetElement = (tweetData) => {
+
+  //get how many days between today and the date when the tweet was created
+  const $dateCreated = new Date(tweetData.created_at);
+  const $dateToday = new Date();
+  const $timeDiff = Math.abs($dateToday.getTime() - $dateCreated.getTime());
+  const $diffDays = Math.ceil($timeDiff / (1000 * 3600 * 24));
+  const $tweet = (`<article>` +
+    `<header>` +
+    `<img class="avatar" src="${tweetData.user.avatars.small}">` +
+    `<h2 class="avatar">${tweetData.user.name}</h2>` +
+    `<span class="handle">${tweetData.user.handle}</span>` +
+    `</header>` +
+    `<div id ="text-second">${tweetData.content.text}</div>` +
+    `<footer>` +
+    `<span class="dayago">${$diffDays} days ago</span>` +
+    `<div class="icons">` +
+    `<span class="flag"><i class="fa fa-flag" aria-hidden="true"></i></span>` +
+    `<span class="rotate"><i class="fa fa-retweet" aria-hidden="true"></i></span>` +
+    `<span class="heart""><i class="fa fa-heart" aria-hidden="true"></i></span>` +
+    `</div>` +
+    `</footer>` +
+    `</article>`);
+
+  
+  return $tweet;
+  
+}
+
+// ..........................................................................................POST req
+const $form = $('form');
+$form.on("submit", (event) => {
+event.preventDefault();
+const urlEncode = $form.serialize();
+$.ajax({
+  method: 'POST',
+  url: "/tweets",
+  data: urlEncode,
+  success: (response) => {
+    console.log("response1",response);
+    renderTweets();
+  }
+})
+})
+
+// ..........................................................................................Define $tweet
+//  createTweetElement(tweetData);
+// console.log($tweet);
+// $('#tweets-container').append($tweet);
+// ..........................................................................................renderTweets = (tweets)
+const $tweeconainer =  $("#tweets-container");
+const renderTweets = (tweets) => {
+  $.ajax({
+      method: 'GET',
+      url: "/tweets",
+      success: (response) => {
+        console.log("response1", response);
+      }
+    
+    })
+  // $tweeconainer.empty();
+  for (let i in tweets) {
+    const $tweet = createTweetElement(tweets[i]);
+    $('#tweets-container').prepend($tweet);
+  }
+
+}
 

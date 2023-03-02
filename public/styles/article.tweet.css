@@ -11,42 +11,39 @@
   width: 90%;
   border-style: none;
   border-bottom-style: groove;
-  margin-top: 1%;
-  background-color: #163800;
-background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
-color: #c7d8bc;
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 0;
 }
-.a {
+.avatar {
   float: left;
   margin: 0;
   margin-left: 5%;
   margin-top: 1%;
 }
-.b{
+.handle{
   float: right;
   margin: 0;
   margin-right: 5%;
   margin-top: 1%;
 }
-.h6{
+.dayago{
   float: left;
   margin: 0;
-  margin-top: 1%;
   margin-left: 5%;
   }
 .icons{
   float: right;
   margin: 0;
-  margin-top: 1%;
   margin-right: 5%;
 }
-a.first:hover{
+span.flag:hover{
   color: rgba(150, 175, 5, 0.651);
 }
-a.second:hover{
+span.rotate:hover{
   color: rgba(150, 175, 5, 0.651);
 }
-a.third:hover{
+span.heart:hover{
   color: rgba(150, 175, 5, 0.651);
 }
