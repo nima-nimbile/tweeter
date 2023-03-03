@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  * 
  */
-
+$(document).ready(function () {
 // ..........................................................................................tweetData Object
 
 // const tweetData = {
@@ -49,7 +49,7 @@ const createTweetElement = (tweetData) => {
   
   const $tweet = (`<article>` +
     `<header>` +
-    `<img class="avatar" src="${tweetData.user.name}">` +
+    `<img class="avatar" src="${tweetData.user.avatar}">` +
     `<h2 class="avatar">${tweetData.user.name}</h2>` +
     `<span class="handle">${tweetData.user.handle}</span>` +
     `</header>` +
@@ -69,9 +69,8 @@ const createTweetElement = (tweetData) => {
 
 };
 // ..........................................................................................POST req
-const $form = $('form');
-$(document).ready(function () {
-$form.on("submit", (event) => {
+
+$('form').on("submit", (event) => {
   console.log("event1", event);
   // if ($form === "" || $form === null){
   //   window.alert("you did not type anaything")
@@ -81,7 +80,7 @@ $form.on("submit", (event) => {
   // } else {
     console.log("event2", event);
     event.preventDefault();
-  const urlEncode = $form.serialize();
+  const urlEncode = $('form').serialize();
   $.ajax({
     method: 'POST',
     url: "/tweets",
@@ -93,6 +92,7 @@ $form.on("submit", (event) => {
   })
 // }
 })
+
 });
 
 
