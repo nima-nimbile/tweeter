@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $(".new-tweet").on( "keyup keypress", "textarea" , function(event) {
+  $(".new-tweet").on( "input", function(event) {
    
     const $textarea = event.target;
     const $text = $textarea.value;
