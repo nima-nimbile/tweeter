@@ -1,18 +1,16 @@
-
 #tweet-text {
   display: inline-block;
   width: 90%;
   border-style: none;
   border-bottom-style: groove;
   background-color: #163800;
-background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
-color: #c7d8bc;
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
+  color: #c7d8bc;
 }
 
 button {
   background-color: #163800;
-background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
   color: #183153;
   font-family: bungee;
   font-size: smaller;
@@ -20,12 +18,14 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall.p
   float: left;
   margin-left: 5%;
 }
+
 button:hover {
-color: rgba(150, 175, 5, 0.651);
+  color: rgba(150, 175, 5, 0.651);
 }
+
 button:checked {
   color: rgba(199, 45, 7, 0.651);
-  }
+}
 
 .counter {
   float: right;
@@ -33,16 +33,19 @@ button:checked {
   font-family: 'Bungee'
 }
 
-.text{
+.text {
   float: left;
   margin-left: 5%;
 }
+
 .borderbottom {
   border-bottom: solid;
   display: inline-flex;
   width: 90%;
 }
-#bug1, #bug2 {
+
+#bug1,
+#bug2 {
   color: #183153;
   margin-right: 0.5%;
 }

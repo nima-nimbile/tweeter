@@ -1,4 +1,4 @@
-.article {
+article {
   margin-top: 40px;
   border: solid;
   margin-right: 5%;
@@ -6,7 +6,11 @@
   height: 200px;
 }
 
-
+.username {
+  float: left;
+  margin: 0;
+  margin-top: 1%;
+}
 #text-second{
   width: 90%;
   border-style: none;
@@ -14,7 +18,8 @@
   margin-top: 5%;
   margin-right: 5%;
   margin-left: 5%;
-  margin-bottom: 0;
+  text-align: left;
+  color: #c7d8bc;;
 }
 .avatar {
   float: left;
@@ -32,11 +37,13 @@
   float: left;
   margin: 0;
   margin-left: 5%;
+  margin-top: 0.5%;
   }
 .icons{
   float: right;
   margin: 0;
   margin-right: 5%;
+  margin-top: 0.5%;
 }
 span.flag:hover{
   color: rgba(150, 175, 5, 0.651);

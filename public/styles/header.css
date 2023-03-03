@@ -2,26 +2,22 @@
   height: 400px;
   width: 100%;
   background-color: #163800;
-background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
-/* .header {
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
   display: flex;
-  justify-content: center;
-} */
+  flex-direction: column;
+  align-items: center;
+}
+
 .child1 {
-padding-top: 4em;
-height: 250px;
-display: flex;
-justify-content: center;
-color: #aa8c15;
+  padding-top: 4em;
+  height: 250px;
+  display: flex;
+  color: #aa8c15;
 
 }
 
 .child2 {
-color:  #e2d086;
-font-size: 18px;
-display: flex;
-justify-content: center;
+  color: #e2d086;
+  font-size: 18px;
+  display: flex;
 }
