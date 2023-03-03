@@ -39,6 +39,12 @@ const renderTweets = (tweets) => {
         $tweeconainer.prepend($tweet);
       }
     };
+// ..........................................................................................escape = function (str)
+    const escape = function (str) {
+      let div = document.createElement("div");
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };
 // ..........................................................................................createTweetElement = (tweetData)
 const createTweetElement = (tweetData) => {
   console.log("tweetData",tweetData);
@@ -53,7 +59,7 @@ const createTweetElement = (tweetData) => {
     `<h2 class="avatar">${tweetData.user.name}</h2>` +
     `<span class="handle">${tweetData.user.handle}</span>` +
     `</header>` +
-    `<div id ="text-second">${tweetData.content.text}</div>` +
+    `<div id ="text-second">${escape(tweetData.content.text)}</div>` +
     `<footer>` +
     `<span class="dayago">${diffDays} days ago</span>` +
     `<div class="icons">` +
@@ -71,15 +77,18 @@ const createTweetElement = (tweetData) => {
 // ..........................................................................................POST req
 
 $('form').on("submit", (event) => {
-  console.log("event1", event);
-  // if ($form === "" || $form === null){
-  //   window.alert("you did not type anaything")
-  // }
-  // if($form.length > 140){
-  //   window.alert("content is too long")
-  // } else {
-    console.log("event2", event);
-    event.preventDefault();
+  console.log("$('form'),", $('form'))
+  event.preventDefault();
+  $("#book").slideUp();
+    $("#book1").slideUp();
+  const tweetData = event.target[0].value
+  console.log("tweetData1111", tweetData);
+  if (tweetData === "" || tweetData === null){
+   return  $("#book").slideDown('slow');
+  }
+  if(tweetData.length > 140){
+    return $("#book1").slideDown('slow');
+    } 
   const urlEncode = $('form').serialize();
   $.ajax({
     method: 'POST',
@@ -90,7 +99,7 @@ $('form').on("submit", (event) => {
       loadTweets();
     }
   })
-// }
+
 })
 
 });

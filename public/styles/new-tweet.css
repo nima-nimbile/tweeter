@@ -42,4 +42,7 @@ button:checked {
   display: inline-flex;
   width: 90%;
 }
-
+#bug1, #bug2 {
+  color: #183153;
+  margin-right: 0.5%;
+}
