@@ -13,27 +13,37 @@ nav {
   color: #183153;
   font-family: Bungee;
   padding: 1.5em;
-  font-size: 24px;
-  /* margin: auto;
-  float: left; */
-  
+  font-size: 24px; 
 }
 #Write {
   color: #FFFFFF;
 }
 
 #newTw{
-  
   color: #183153;
   font-size: 18px;
-  /* float: right; */
   padding: 1.5em;
-  /* margin: auto; */ */
-
 }
 #arrow {
   color: red;
   display: flex;
   justify-content: center;
 }
-
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  nav {
+    background-color: #163800;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  }
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+  nav {
+    background-color: #163800;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  }
+}
+@media only screen and (min-width:320px) and (max-width:480px) {
+  nav {
+    background-color: #163800;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  }
+}
