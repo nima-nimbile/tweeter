@@ -4,7 +4,7 @@ Tweeter is a simple, single-page Twitter clone.
 
 ## Final Product
 
-!["Demo"]()
+!["Demo"](https://github.com/nima-nimbile/tweeter/blob/master/docs/demo.gif?raw=true)
 
 ## Dependencies
 
