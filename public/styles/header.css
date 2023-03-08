@@ -1,11 +1,16 @@
 .parent {
   height: 400px;
-  width: 100%;
+  width: 40%;
   background-color: #163800;
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-image: url(https://www.transparenttextures.com/patterns/brick-wall.png);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+  margin-top: 8%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 4%;
 }
 
 
@@ -25,17 +30,44 @@
 
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
+  .parent {
+    height: 400px;
+    width: 100%;
+    background-color: #aa8c15;
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .child1 {
     margin-top: 10%;
   }
 }
 
 @media only screen and (min-width:481px) and (max-width:768px) {
+  .parent {
+    height: 400px;
+    width: 100%;
+    background-color: #aa8c15;
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .child1 {
     margin-top: 12%;
   }
 }
 @media only screen and (min-width:320px) and (max-width:480px) {
+  .parent {
+    height: 400px;
+    width: 100%;
+    background-color: #aa8c15;
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .child1 {
     margin-top: 16%;
   }

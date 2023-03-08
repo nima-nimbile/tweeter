@@ -6,6 +6,9 @@ article {
   height: 200px;
   padding: auto;
 }
+.border:hover {
+  box-shadow: 3px 3px 3px 3px#e2d086;
+}
 .username {
   float: left;
   margin: 0;
@@ -19,7 +22,7 @@ article {
   margin-right: 6%;
   margin-left: 6%;
   text-align: left;
-  color: #c7d8bc;;
+  color: #c7d8bc;
 }
 .avatar {
   float: left;

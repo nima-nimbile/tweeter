@@ -49,3 +49,7 @@ button:checked {
   color: #183153;
   margin-right: 0.5%;
 }
+
+.hidde {
+  display: none;
+}

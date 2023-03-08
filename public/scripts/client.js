@@ -20,6 +20,7 @@ $(document).ready(function () {
   const tweeconainer = $("#tweets-container");
   const renderTweets = (tweets) => {
     $('#tweet-text').val("");
+    $('.counter').val("140");
     for (let data in tweets) {
       const $tweet = createTweetElement(tweets[data]);
       tweeconainer.prepend($tweet);
@@ -34,11 +35,8 @@ $(document).ready(function () {
   // ..........................................................................................createTweetElement = (tweetData)
   const createTweetElement = (tweetData) => {
     console.log("tweetData", tweetData);
-    const dateCreated = new Date(tweetData.created_at);
-    const dateToday = new Date();
-    const timeDiff = Math.abs(dateToday.getTime() - dateCreated.getTime());
-    const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-    const $tweet = (`<article>` +
+    const diffDays = timeago.format(new Date(tweetData.created_at));
+    const $tweet = (`<article class = "border">` +
       `<header>` +
       `<img class="avatar" src="${tweetData.user.avatars}">` +
       `<h2 class="username">${tweetData.user.name}</h2>` +
@@ -46,7 +44,7 @@ $(document).ready(function () {
       `</header>` +
       `<div id ="text-second">${escape(tweetData.content.text)}</div>` +
       `<footer>` +
-      `<span class="dayago">${diffDays} days ago</span>` +
+      `<span class="dayago">${diffDays}</span>` +
       `<div class="icons">` +
       `<span class="flag"><i class="fa fa-flag" aria-hidden="true"></i></span>` +
       `<span class="rotate"><i class="fa fa-retweet" aria-hidden="true"></i></span>` +
